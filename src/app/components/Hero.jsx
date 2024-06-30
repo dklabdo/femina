@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { Star } from "lucide-react";
 import { DownloadIcon } from "lucide-react";
+import 'animate.css';
 
 function Hero() {
   return (
     <div className="lg:flex-row  overflow-x-hidden flex flex-col gap-20 w-full items-center py-14">
-      <div className=" w-full lg:w-[60%] px-2 md:px-10 2xl:px-20 flex flex-col gap-4 ">
+      <div className="animate__animated animate__backInRight animate__delay-4s w-full lg:w-[60%] px-2 md:px-10 2xl:px-20 flex flex-col gap-4 ">
         <h1>
           Femina Le Service de Transport et de Livraison Exclusif pour Femmes
         </h1>
@@ -32,7 +33,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-full overflow-y-hidden scale-90 md:scale-110 lg:w-[40%] flex justify-center ">
+      <div className=" animate__animated animate__backInLeft animate__delay-4s w-full overflow-y-hidden scale-90 md:scale-110 lg:w-[40%] flex justify-center ">
         <Image src="/hero.png" alt="..." width={500} height={500} />
       </div>
       <div className="my-12 overflow-y-hidden lg:hidden w-fit flex px-4 xs:scale-90  gap-5">

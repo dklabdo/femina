@@ -6,6 +6,7 @@ import Section3 from "./components/Section3";
 import Mobile from "./components/Mobile";
 import Footer from "./components/Footer";
 import Video from "./components/Video";
+import Preload from "./components/Preload";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Mobile />
       <Section3 />
       <Footer />
+      <Preload/>
     </main>
   );
 }

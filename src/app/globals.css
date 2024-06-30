@@ -57,3 +57,39 @@
   }
   
 }
+
+.logoAnimation{
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes logo{
+  0%{
+    color: rgb(170, 170, 170);
+
+  }
+  100%{
+    color: #BE1B7D;
+  }
+}
+
+.preload{
+  animation-name: preload;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes preload{
+  0%{
+    opacity: 1;
+
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
