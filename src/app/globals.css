@@ -7,7 +7,7 @@
     @apply text-center lg:text-start  text-xl md:text-2xl text-black font-semibold 
   }
   nav{
-    @apply md:px-8 xl:px-10 px-2 py-8 bg-white/50 items-center backdrop-blur-md flex justify-between
+    @apply md:px-8 xl:px-10 px-2 pt-2 pb-8 bg-white/50 items-center backdrop-blur-md flex justify-between
   }
   .logo{
     @apply font-bold text-xl text-main cursor-pointer
