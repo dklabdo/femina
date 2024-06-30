@@ -2,32 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components{
+  h1{
+    @apply text-center lg:text-start  text-xl md:text-2xl text-black font-semibold 
   }
+  nav{
+    @apply md:px-8 xl:px-10 px-2 py-8 bg-white/50 items-center backdrop-blur-md flex justify-between
+  }
+  .logo{
+    @apply font-bold text-xl text-main cursor-pointer
+  }
+  ul{
+    @apply flex gap-12 text-base
+  }
+  ul li a{
+    @apply cursor-pointer hover:text-main hover:scale-105 pb-4 transition hover:border-main  hover:border-b-[3px] 
+  }
+  .primaryButton{
+    @apply px-6 py-3 border-2 w-fit border-main bg-main text-white rounded-3xl md:hover:scale-105 transition
+  }
+  .secondaryButton{
+    @apply px-6 py-3 border-2 w-fit border-main bg-white text-main rounded-3xl hover:scale-105 transition
+  }
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+:root {
+  background-color: white;
+  scroll-behavior: smooth;
 }
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.openAnimation{
+  animation-name: open;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+
+}
+
+@keyframes open {
+  0% {
+    right: -100%;
+  }
+  100%{
+    right: 0;
+
+  }
+  
 }
