@@ -60,7 +60,7 @@
 
 .logoAnimation{
   animation-name: logo;
-  animation-duration: 2s;
+  animation-duration: 3.5s;
   animation-fill-mode: both;
   animation-timing-function: linear;
 }
@@ -77,8 +77,8 @@
 
 .preload{
   animation-name: preload;
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
   animation-fill-mode: both;
   animation-timing-function: linear;
 }
